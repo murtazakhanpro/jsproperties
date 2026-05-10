@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JS Property & Construction — Karachi's trusted real estate agency for buying, selling, renting, and construction services. Led by CEO Muhammad Junaid Siddiqui." />
+  <title>JS Property & Construction | Karachi's Trusted Real Estate Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <img src="logo.jpg" alt="JS Property & Construction Logo" class="main-logo-img" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#construction" class="nav-link">Construction</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <a href="tel:03009229665" class="btn-call" id="btn-call">
+        <i class="fas fa-phone-alt"></i> Call Now: 0300 9229665
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80" alt="Modern Karachi Skyline" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-shield-alt"></i> Zameen.com Trusted Agency 2025
+      </div>
+      <h1 class="hero-title">
+        Expert Real Estate &<br /><span class="gold-text">Construction Services</span><br />in Karachi.
+      </h1>
+      <p class="hero-subtitle">
+        Led by CEO <strong>Muhammad Junaid Siddiqui</strong>, we provide trusted solutions for buying, selling, and building your future in Pakistan's largest city.
+      </p>
+      <div class="hero-cta">
+        <a href="#gallery" class="btn-primary" id="btn-view-collections">View Our Collections</a>
+        <a href="#contact" class="btn-secondary" id="btn-contact-us">Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Properties Sold</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">1000+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BADGE STRIP ===== -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item"><i class="fas fa-award"></i><span>Zameen.com Trusted Agency 2025</span></div>
+        <div class="trust-item"><i class="fas fa-handshake"></i><span>Transparent Commissions</span></div>
+        <div class="trust-item"><i class="fas fa-map-marker-alt"></i><span>Based in Karachi Lines</span></div>
+        <div class="trust-item"><i class="fas fa-check-circle"></i><span>Verified Properties</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Our Real Estate Services</h2>
+        <p class="section-subtitle">Comprehensive property solutions tailored for Karachi's dynamic real estate market.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" id="service-buy">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-home"></i></div>
+          </div>
+          <h3>Buy Property</h3>
+          <p>Find your dream home or investment property. We offer houses, buildings, offices, and plots across Karachi's prime locations.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Houses & Villas</li>
+            <li><i class="fas fa-check"></i> Commercial Buildings</li>
+            <li><i class="fas fa-check"></i> Offices & Shops</li>
+            <li><i class="fas fa-check"></i> Residential Plots</li>
+          </ul>
+          <div class="service-commission"><i class="fas fa-tag"></i> 2% Commission on Sales</div>
+          <a href="tel:03009229665" class="service-cta">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card featured" id="service-sell">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-sign-hanging"></i></div>
+          </div>
+          <h3>Sell Property</h3>
+          <p>Maximize your property's value with our professional marketing and vast buyer network across Karachi.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Free Property Valuation</li>
+            <li><i class="fas fa-check"></i> Professional Listing</li>
+            <li><i class="fas fa-check"></i> Wide Buyer Network</li>
+            <li><i class="fas fa-check"></i> Legal Documentation</li>
+          </ul>
+          <div class="service-commission"><i class="fas fa-tag"></i> 2% Commission on Sales</div>
+          <a href="tel:03009229665" class="service-cta">List Your Property <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" id="service-rent">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-key"></i></div>
+          </div>
+          <h3>Rent Property</h3>
+          <p>Discover premium rental properties — residential and commercial — in Karachi's most sought-after areas.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Residential Houses</li>
+            <li><i class="fas fa-check"></i> Office Spaces</li>
+            <li><i class="fas fa-check"></i> Commercial Shops</li>
+            <li><i class="fas fa-check"></i> Long & Short Term</li>
+          </ul>
+          <div class="service-commission"><i class="fas fa-tag"></i> 1 Month Rent as Fee</div>
+          <a href="tel:03009229665" class="service-cta">Find Rentals <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED COLLECTION / GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Collection</h2>
+        <p class="section-subtitle">A glimpse of premium properties we've dealt with across Karachi.</p>
+      </div>
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="plots">Plots</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" alt="Luxury Villa Karachi" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Luxury Villa</h4>
+              <p>DHA Phase 6, Karachi</p>
+              <span class="gallery-tag">Residential</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item large" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Commercial Tower Karachi" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Commercial Tower</h4>
+              <p>Clifton, Karachi</p>
+              <span class="gallery-tag">Commercial</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Modern Apartment" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Modern Apartment</h4>
+              <p>Gulshan-e-Iqbal, Karachi</p>
+              <span class="gallery-tag">Residential</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="plots">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Residential Plot" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Prime Plot</h4>
+              <p>Scheme 33, Karachi</p>
+              <span class="gallery-tag">Plot</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Office Space" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Premium Office</h4>
+              <p>Shahrah-e-Faisal, Karachi</p>
+              <span class="gallery-tag">Commercial</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Residential House" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Elegant Home</h4>
+              <p>North Nazimabad, Karachi</p>
+              <span class="gallery-tag">Residential</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONSTRUCTION SECTION ===== -->
+  <section class="construction" id="construction">
+    <div class="construction-bg">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="Construction background" />
+      <div class="construction-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag light">Our Expertise</span>
+        <h2 class="section-title">Premium Construction & Design</h2>
+        <p class="section-subtitle">End-to-end construction and interior solutions with premium materials and competitive rates.</p>
+      </div>
+      <div class="construction-grid">
+        <div class="construction-card" id="const-grey">
+          <div class="const-icon"><i class="fas fa-building"></i></div>
+          <h3>Grey Structure</h3>
+          <p>Solid foundations and skeleton work built to last. We use high-grade materials for concrete, steel framework, and structural integrity that exceeds standards.</p>
+          <div class="const-features">
+            <span><i class="fas fa-check-circle"></i> Foundation & Slab</span>
+            <span><i class="fas fa-check-circle"></i> Brick Masonry</span>
+            <span><i class="fas fa-check-circle"></i> Plumbing & Wiring</span>
+            <span><i class="fas fa-check-circle"></i> Roof Structure</span>
+          </div>
+          <div class="const-rate">Competitive Rates · Project-Based Pricing</div>
+        </div>
+        <div class="construction-card highlighted" id="const-finish">
+          <div class="const-icon"><i class="fas fa-paint-roller"></i></div>
+          <h3>Finishing & Renovation</h3>
+          <p>High-end craftsmanship for a polished look. Transform any space with premium finishing that combines aesthetics with functionality.</p>
+          <div class="const-features">
+            <span><i class="fas fa-check-circle"></i> Flooring & Tiling</span>
+            <span><i class="fas fa-check-circle"></i> Plastering & Paint</span>
+            <span><i class="fas fa-check-circle"></i> Woodwork & Doors</span>
+            <span><i class="fas fa-check-circle"></i> Complete Renovation</span>
+          </div>
+          <div class="const-rate">Premium Materials · Quality Guaranteed</div>
+        </div>
+        <div class="construction-card" id="const-interior">
+          <div class="const-icon"><i class="fas fa-couch"></i></div>
+          <h3>Interior Design</h3>
+          <p>Modern aesthetics tailored to your lifestyle. Our designers blend contemporary styles with cultural sensibilities for spaces that feel like home.</p>
+          <div class="const-features">
+            <span><i class="fas fa-check-circle"></i> 3D Design Planning</span>
+            <span><i class="fas fa-check-circle"></i> Custom Furniture</span>
+            <span><i class="fas fa-check-circle"></i> Lighting Design</span>
+            <span><i class="fas fa-check-circle"></i> Full Fitout</span>
+          </div>
+          <div class="const-rate">Tailored to Your Budget & Vision</div>
+        </div>
+      </div>
+      <div class="construction-note">
+        <i class="fas fa-info-circle"></i>
+        All construction rates are competitive and based on project scope, location, and premium material selection. Contact us for a free consultation and estimate.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CEO / ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-image-wrapper">
+            <img src="ceo.jpg" alt="Muhammad Junaid Siddiqui - CEO JS Property" class="ceo-img" />
+            <div class="about-badge-card">
+              <img src="cover.jpg" alt="Zameen.com Trusted Agency Certificate" class="cert-img" />
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col">
+          <span class="section-tag">About The CEO</span>
+          <h2 class="section-title">Muhammad Junaid Siddiqui</h2>
+          <p class="ceo-title-badge"><i class="fas fa-user-tie"></i> Chief Executive Officer</p>
+          <p class="about-desc">With over a decade of experience in Karachi's real estate and construction sector, Muhammad Junaid Siddiqui has built JS Property & Construction into one of the city's most trusted agencies — recognized by Zameen.com as a <strong>Trusted Agency in 2025</strong>.</p>
+          <p class="about-desc">His philosophy is simple: transparency, quality, and client satisfaction above all. Whether you're a first-time homebuyer or a seasoned investor, the JS Property team is committed to guiding you every step of the way.</p>
+          <div class="about-credentials">
+            <div class="credential"><div class="cred-icon"><i class="fas fa-medal"></i></div><div><strong>Zameen.com Trusted Agency 2025</strong><span>Official Recognition</span></div></div>
+            <div class="credential"><div class="cred-icon"><i class="fas fa-city"></i></div><div><strong>Karachi Lines Expert</strong><span>Deep Local Knowledge</span></div></div>
+            <div class="credential"><div class="cred-icon"><i class="fas fa-users"></i></div><div><strong>1000+ Satisfied Clients</strong><span>Across Karachi</span></div></div>
+          </div>
+          <a href="tel:03009229665" class="btn-primary" id="btn-call-ceo"><i class="fas fa-phone-alt"></i> Speak with the CEO</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Ready to make your move? Reach out and we'll respond within the hour.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-detail">
+              <h4>Phone</h4>
+              <a href="tel:03009229665">0300 9229665</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-whatsapp">
+            <div class="contact-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-detail">
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/923009229665?text=Hello%2C%20I%20am%20interested%20in%20your%20property%20services." target="_blank">Chat on WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail">
+              <h4>Email</h4>
+              <a href="mailto:jsproperty.pk@gmail.com">jsproperty.pk@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-address">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail">
+              <h4>Address</h4>
+              <span>Karachi Lines, Karachi, Pakistan</span>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-facebook">
+            <div class="contact-icon facebook"><i class="fab fa-facebook-f"></i></div>
+            <div class="contact-detail">
+              <h4>Facebook</h4>
+              <a href="https://www.facebook.com/jsproperty.construction" target="_blank">jsproperty.construction</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-col">
+          <form class="contact-form" id="contact-form" novalidate>
+            <h3>Send Us a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="fphone">Phone Number</label>
+                <input type="tel" id="fphone" name="fphone" placeholder="e.g. 0300 1234567" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="femail" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="fservice">Service Interested In</label>
+              <select id="fservice" name="fservice">
+                <option value="">— Select a Service —</option>
+                <option>Buy Property</option>
+                <option>Sell Property</option>
+                <option>Rent Property</option>
+                <option>Grey Structure Construction</option>
+                <option>Finishing & Renovation</option>
+                <option>Interior Design</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Your Message</label>
+              <textarea id="fmessage" name="fmessage" placeholder="Tell us about your requirements..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="btn-send-message">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i> Thank you! We'll contact you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logo.jpg" alt="JS Property & Construction Logo" class="footer-logo-img" />
+          </div>
+          <p>Karachi's trusted real estate and construction company. Recognized by Zameen.com as a Trusted Agency 2025.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/jsproperty.construction" target="_blank" id="footer-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/923009229665" target="_blank" id="footer-whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:jsproperty.pk@gmail.com" id="footer-email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Real Estate Services</a></li>
+            <li><a href="#construction">Construction</a></li>
+            <li><a href="#gallery">Featured Collection</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Buy Property</a></li>
+            <li><a href="#services">Sell Property</a></li>
+            <li><a href="#services">Rent Property</a></li>
+            <li><a href="#construction">Grey Structure</a></li>
+            <li><a href="#construction">Interior Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:03009229665">0300 9229665</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:jsproperty.pk@gmail.com">jsproperty.pk@gmail.com</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> Karachi Lines, Pakistan</p>
+          <div class="footer-commission">
+            <p><i class="fas fa-tag"></i> 2% Commission on Sales</p>
+            <p><i class="fas fa-tag"></i> 1 Month Rent for Rentals</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 JS Property & Construction. All Rights Reserved.</p>
+        <p>CEO: Muhammad Junaid Siddiqui | Karachi Lines, Pakistan</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+  <a href="https://wa.me/923009229665?text=Hello%2C%20I%20am%20interested%20in%20JS%20Property%20services." class="whatsapp-float" id="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
