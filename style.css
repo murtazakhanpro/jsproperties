@@ -1066,12 +1066,23 @@ img {
   color: var(--accent-gold);
 }
 
-.footer-bottom {
-  text-align: center;
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.5);
+.footer-bottom p {
+  margin-bottom: 5px;
+}
+
+.footer-credits {
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.footer-credits a {
+  color: var(--accent-gold);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer-credits a:hover {
+  color: var(--white);
 }
 
 /* --- Floating Elements --- */
