@@ -149,7 +149,8 @@ img {
 }
 
 .navbar.scrolled {
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   padding: 10px 0;
   box-shadow: var(--shadow-sm);
 }
@@ -161,17 +162,20 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px; /* Consistent height */
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .main-logo-img {
-  height: 60px;
+  max-height: 80px; /* Allow it to be slightly larger than container if needed */
   width: auto;
   transition: var(--transition);
+  display: block;
 }
 
 .navbar.scrolled .main-logo-img {
@@ -254,7 +258,8 @@ img {
 
 /* --- Hero Section --- */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 100px; /* Space for fixed navbar */
   position: relative;
   display: flex;
   align-items: center;
@@ -289,8 +294,11 @@ img {
 .hero-content {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 20px;
+  margin-top: 80px; /* Extra push down */
+  padding: 40px 20px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-badge {
@@ -304,21 +312,21 @@ img {
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.85rem;
-  margin-bottom: 25px;
+  margin-bottom: 35px; /* Increased margin */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.8rem; /* Slightly smaller to prevent overlap */
   line-height: 1.1;
   font-weight: 900;
   margin-bottom: 25px;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  max-width: 600px;
+  font-size: 1.2rem;
+  max-width: 650px;
   margin-bottom: 40px;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -1113,7 +1121,7 @@ img {
 
 /* --- Responsive Styles --- */
 @media (max-width: 1024px) {
-  .hero-title { font-size: 3rem; }
+  .hero-title { font-size: 2.8rem; }
   .services-grid, .construction-grid, .footer-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
 }
@@ -1122,7 +1130,7 @@ img {
   .nav-links, .btn-call { display: none; }
   .hamburger { display: block; }
   
-  .hero-title { font-size: 2.5rem; }
+  .hero-title { font-size: 2.2rem; }
   .hero-stats { flex-direction: column; align-items: flex-start; gap: 15px; }
   .stat-divider { display: none; }
   
